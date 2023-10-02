@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/54ef73db9f.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/54ef73db9f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Reprodutor de musica</title>
+</head>
+<body>
+    <div id="container-principal">
+        <div class="container-secundario">
+            <h3><i class="fas fa-signal"></i> Music</h3>
+            <div class="card">
+                <img src="">
+                <button class="btn-play-pause" id="play-pause"><i class="fas fa-play"></i></button>
+                <div class="content">
+                    <h4>Title</h4>
+                    <h5>Artist</h5>
+                    <div class="timer">
+                        <div id="current-duration">00:00</div>
+                        <input type="range" min= "0" max="0" id="seekbar">
+                        <i class="fas fa-volume-up" id="vol"></i>
+                        <input type="range" min= "0"  max="100" id="volume" value="0">
+                        <div id="total-duration">00:00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js" type="module"></script>
+    
+</body>
+</html>

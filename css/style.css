@@ -1,0 +1,131 @@
+/* 
+    Formatação geral
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary: #7159c1;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+#container-principal {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efefef;
+    
+}
+.container-secundario {
+    background-color: white;
+    /* border: 1px solid #000; */
+    width: 90%;
+    max-width: 375px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 3px 1px -2px rgba(0, 0, 0, 0.12), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+h3 {
+    padding: 15px 0;
+    color: var(--primary);
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h5 {
+    padding-bottom: 15px;
+}
+img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+audio {
+    width: 100%;
+}
+
+.content {
+    padding: 15px;
+}
+.card {
+    position: relative;
+}
+.btn-play-pause {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    position: absolute;
+    top: 175px;
+    right: 40px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background-color: var(--primary);
+    color: #FFF;
+}
+.timer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#vol{
+    color: var(--primary);
+}
+
+#seekbar {
+    width: 40%;
+    height: 3px;
+}
+#volume {
+    width: 15%;
+    height: 3px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+}
+
+input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background-color: var(--primary);
+    border-radius: 12px;
+}
+input[type="range"]::-ms-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background-color: var(--primary);
+    border-radius: 12px;
+}
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background-color: var(--primary);
+    border-radius: 12px;
+}
+
